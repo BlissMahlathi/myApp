@@ -1,0 +1,18 @@
+[package]
+name = "server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Rehearsal coordination server with WebSocket hub and session management"
+
+[dependencies]
+proto = { path = "../proto" }
+tokio.workspace = true
+axum.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber = "0.3"
+anyhow.workspace = true
+thiserror.workspace = true
